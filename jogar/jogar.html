@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleJogar.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <title>Jhow Ken POW! - Pedra, Papel ou Tesoura de forma Épica!</title>
+</head>
+<body>
+        <header>
+            <img src="../imgs/logo.png" alt="">
+        </header>
+        <div id="meio">
+            <p>Faça sua jogada!</p>
+        </div>
+        <main>
+            <div id="pedra" onclick="escolha('pedra')"><img src="../imgs/pedram.jpeg" alt="Ícone de escolha PEDRA"></div>
+            <div id="papel" onclick="escolha('papel')"><img src="../imgs/papelm.jpeg" alt="Ícone de escolha PAPEL"></div>
+            <div id="tesoura"onclick="escolha('tesoura')"><img src="../imgs/tesouram.jpeg" alt="Ícone de escolha TESOURA"></div>
+        </main>
+        <div id="escolha" class="escondido">
+            <p id="escolhaTexto">Você escolheu: </p>
+        </div>
+        <div class="resultado escondido">
+            
+        </div>
+
+        <div id="resfinal" class="escondido">
+            
+        </div>
+
+        <div id="jdenovo" class="escondido"><p><a href=""><button>Jogar de novo!</button></a></p></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen";
+    box-sizing: border-box;
+}
+
+#topo {
+    background-color: black;
+}
+
+#topo p {
+    text-align: center;
+    padding: 3px;
+    color: thistle;
+}
+
+header {
+    padding-top: 280px;
+    text-align: center;
+    background-image: url(../imgs/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#fundoTitulo {
+    background-color: rgba(1, 17, 31, 0.719);
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+header p {
+    border-right: 2px solid rgba(240, 248, 255, 0.616);
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: .8rem;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal, 
+    typing 4s steps(40) 500ms normal both;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 65%;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right: 2px solid rgba(240, 248, 255, 0.616);
+    }
+    to {
+        border-right: transparent;
+    }
+}
+
+header img {
+    max-width: 70%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #543e75, #17131d);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 50px;
+    padding: 20px 40px;
+    border: none;
+    background-image: linear-gradient(to bottom, rgb(117, 53, 69), rgb(10, 14, 32));
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 5px 8px 0.9px rgba(0, 0, 0, 0.87);
+    transition: 300ms;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px)  {
+    body {
+        width: 70%;
+        margin: auto;
+    }
+
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+        to{
+            width: 20vw;
+        }
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+        border-radius: 25px;
+        background-image: linear-gradient(to bottom, rgb(185, 107, 126), rgb(35, 50, 92));
+    }
+}

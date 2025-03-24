@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+    font-size: .7rem;
+    box-sizing: border-box;
+}
+
+#topo {
+    background-color: black;
+}
+
+#topo p {
+    text-align: center;
+    padding: 3px;
+    color: thistle;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0px;
+    background-image: url(../imgs/fundojogar.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+header img {
+    max-width: 30%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #543e75, #17131d);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#meio p {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2rem;
+    padding: 30px 0;
+}
+
+#escolha p {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 1.3rem;
+    padding: 30px 0;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+main img {
+    max-width: 70%;
+    border-radius: 10px;
+    filter: grayscale(80%);
+}
+
+#fotinha {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.escolhido img {
+    filter: none;
+    border-radius: 50%;
+}
+
+.resultado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.resultado img {
+    width: 90%;
+}
+
+
+.vencedor img {
+    border-radius: 30px;
+}
+
+.perdedor img {
+    filter: blur(2px);
+    width: 65%;
+}
+
+#resfinal p {
+    text-align: center;
+    color: gold;
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+
+#resfinal img {
+    width: 30px;
+}
+
+button {
+    margin-top: 50px;
+    padding: 20px 40px;
+    border: none;
+    background-image: linear-gradient(to bottom, rgb(117, 53, 69), rgb(10, 14, 32));
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 5px 8px 0.9px rgba(0, 0, 0, 0.87);
+    transition: 300ms;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.escondido {
+    display: none;
+}
+
+#jdenovo {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px)  {
+    header img {
+        max-width: 30%;
+    }
+    
+    body {
+        width: 60%;
+        margin: auto;
+    }
+
+    main img {
+        width: 35%;
+        transition: 400ms;
+    }
+
+    main img:hover {
+        width: 45%;
+        border-radius: 50%;
+        filter: none;
+    }
+
+    #perdedor img {
+        width: 35%;
+    }
+
+    #resfinal {
+        padding-bottom: 100px;
+    }
+
+    .resultado img {
+        width: 50%;
+    }
+
+    button:hover {
+        cursor: pointer;
+        border-radius: 25px;
+        background-image: linear-gradient(to bottom, rgb(185, 107, 126), rgb(35, 50, 92));
+    }
+
+}
